@@ -5,7 +5,6 @@ const logger = require("morgan");
 const path = require("path");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
-// require("./database");
 const app = express();
 
 app.use(logger("dev"));
