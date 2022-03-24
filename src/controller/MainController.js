@@ -63,8 +63,7 @@ const MainController = {
     try {
       const { id } = req.params;
 
-      const { name, email, username, avatar } = req.body;
-      let { password } = req.body;
+      const { name, email,password, username, avatar } = req.body;
       if (password) {
         password = bcrypt.hashSync(password, 10);
       }
